@@ -1,6 +1,6 @@
 import React from 'react';
-
-const MainViewer = (props) => (
+// props
+const MainViewer = () => (
   <div id="MainViewer">
     <div id="gradient" />
     <img id="main-img" src="./images/main.jpg" alt="" />

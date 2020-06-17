@@ -1,17 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import MainViewer from './components/MainViewer.jsx'
-import PopUp from './components/PopUp.jsx'
-import TourSchedule from './components/TourSchedule.jsx'
+import MainViewer from './components/MainViewer';
+// import Modal from './components/Modal';
+import TourSchedule from './components/TourSchedule';
 
 class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      popup: false,
+      // modal: false,
 
-    }
+    };
   }
 
   render() {
@@ -20,7 +20,7 @@ class App extends React.Component {
         <MainViewer />
         <TourSchedule />
       </div>
-    )
+    );
   }
 }
 

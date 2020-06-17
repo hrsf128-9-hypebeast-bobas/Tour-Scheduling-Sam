@@ -1,20 +1,20 @@
-import React from 'react'
+import React from 'react';
 
 class TourSchedule extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       // True = Schedule a Tour
       // False = Request Info
-      tab: true
-    }
+      // tab: true
+    };
   }
 
   render() {
     return (
-      <div></div>
-    )
+      <div>TourSchedule</div>
+    );
   }
 }
 
-export default TourSchedule
+export default TourSchedule;
