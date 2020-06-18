@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import MainViewer from './components/MainViewer';
-// import Modal from './components/Modal';
-import TourSchedule from './components/TourSchedule';
+import MainViewer from './components/MainViewer.jsx';
+// import Modal from './components/Modal.jsx';
+import TourSchedule from './components/TourSchedule.jsx';
 
 class App extends React.Component {
   constructor(props) {
