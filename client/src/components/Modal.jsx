@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 // import TourSchedule from './TourSchedule.jsx'
 import SaveButton from './SaveButton.jsx';
