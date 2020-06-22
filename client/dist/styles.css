@@ -181,7 +181,7 @@ html, body {
 #gallery {
   display: inline-block;
   /* height: 100%; */
-  /* overflow: scroll; */
+  overflow: scroll;
 }
 
 #tourschedule-container {
