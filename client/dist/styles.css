@@ -201,3 +201,52 @@ html, body {
   fill: #007881;
   cursor: pointer;
 }
+
+/* TOUR SCHEDULE */
+
+#TourComponent {
+  width: 33.4%;
+  float: right;
+  margin-top: 24px;
+}
+
+.TourTab {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 16px;
+  width: 50%;
+  color: rgb(0, 120, 130);
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  background-color: white;
+  /* border: 1px solid rgb(232, 233, 234); */
+  border: 1px solid black;
+  border-radius: 8px;
+  outline: none;
+}
+
+#formdiv {
+  padding: 16px;
+  border-radius: 0px 8px 8px;
+  border: 1px solid black;
+}
+
+#tab1On {
+  border-bottom: 1px solid transparent;
+}
+
+#tab1Off {
+  border: 1px solid transparent;
+}
+
+#tab2Off {
+  border: 1px solid transparent;
+}
+
+#tab2On {
+  border-bottom: 1px solid transparent;
+}
+
+.type-radio {
+  width: 50%;
+}

@@ -4,19 +4,15 @@ import svgPath from './svgPaths';
 // import TourSchedule from './TourSchedule.jsx'
 import SaveButton from './SaveButton.jsx';
 
-// 6532000
-// 6,532,000
-
 const formatPrice = (num) => {
   const arr = num.split('').reverse();
   arr.splice(3, 0, ',');
   if (num.length > 6) {
     arr.splice(7, 0, ',');
   }
-  return '$' + arr.reverse().join('');
+  return `$${arr.reverse().join('')}`;
 };
 
-// props
 const Modal = ({ toggleModal, home }) => (
   <div id="modal">
     <div id="modalHeader">
