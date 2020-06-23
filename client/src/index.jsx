@@ -1,6 +1,7 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 import MainViewer from './components/MainViewer.jsx';
 import Modal from './components/Modal.jsx';
@@ -10,10 +11,18 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: true,
+      modal: false,
+      home: {},
     };
 
     this.toggleModal = this.toggleModal.bind(this);
+  }
+
+  componentDidMount() {
+    axios.get('http://localhost:3001/api/listings')
+      .then((results) => {
+        this.setState({ home: results.data[0] });
+      });
   }
 
   toggleModal() {
@@ -26,10 +35,10 @@ class App extends React.Component {
       return (
         <div>
           <div id="modalContainer">
-            <Modal toggleModal={this.toggleModal} />
+            <Modal toggleModal={this.toggleModal} home={this.state.home} />
           </div>
           <div id="centerCol">
-            <MainViewer />
+            <MainViewer home={this.state.home} />
             <TourSchedule />
           </div>
         </div>
@@ -37,11 +46,13 @@ class App extends React.Component {
     }
     return (
       <div id="centerCol">
-        <MainViewer toggleModal={this.toggleModal} />
+        <MainViewer toggleModal={this.toggleModal} home={this.state.home} />
         <TourSchedule />
       </div>
     );
   }
 }
+
+export default App;
 
 ReactDOM.render(<App />, document.getElementById('app'));
