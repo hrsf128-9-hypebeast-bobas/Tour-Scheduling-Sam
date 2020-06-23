@@ -49,6 +49,7 @@ html, body {
   margin: 8px;
   right: 0px;
   display: inline;
+  /* position: absolute; */
 }
 
 .headerbtn {
@@ -158,7 +159,7 @@ html, body {
 }
 
 #modalHeader {
-  margin: 16px 16px 8px 16px;
+  margin: 16px 16px 16px 16px;
 }
 
 #modalHeader span {
@@ -187,4 +188,16 @@ html, body {
 #tourschedule-container {
   display: inline-block;
   width: 342px;
+}
+
+#close {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  fill: black;
+}
+
+#close:hover {
+  fill: #007881;
+  cursor: pointer;
 }

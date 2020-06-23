@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '/../client/dist')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan('dev'));
 
-app.get('/api/ScheduleTours', (req, res) => {
+app.get('/api/listings', (req, res) => {
   db.Tour.find()
     .then((results) => {
       res.status(200).send(results);
