@@ -1,6 +1,6 @@
 # Project Name
 
-> Project description
+> Front-End focused project, modeling Trulia.com
 
 ## Related Projects
 
@@ -17,17 +17,17 @@
 
 ## Usage
 
-> Webpack compile: 'npm run react-dev'
+> Webpack compile: 'webpack -d --watch'
 ```sh
-webpack -d --watch
+npm run react-dev'
 ```
-> Start Server: 'npm run start'
+> Start Server: 'nodemon server/index.js'
 ```sh
-nodemon server/index.js
+npm run start'
 ```
-> Seed DB: 'npm run db:seed'
+> Seed DB: 'node database/seed.js
 ```sh
-node database/seed.js
+npm run db:seed
 ```
 
 ## Requirements

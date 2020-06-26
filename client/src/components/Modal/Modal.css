@@ -1,0 +1,56 @@
+/* MODAL */
+
+.modal {
+  height: calc(100% - 96px);
+  width: calc(100% - 96px);
+  margin: 48px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  position: absolute;
+}
+
+.modalHeader {
+  margin: 16px 16px 16px 16px;
+}
+
+.modalHeader span {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.33;
+}
+
+.modalButtons {
+  display: inline-block;
+  float: right;
+}
+
+.modalBody {
+  border-top: 1px solid rgb(205,209,212);
+  height: 100%;
+}
+
+.gallery {
+  display: inline-block;
+  /* height: 100%; */
+  overflow: scroll;
+}
+
+.tourscheduleContainer {
+  border-left: ;
+  float: right;
+  /* display: inline-block; */
+  width: 342px;
+}
+
+.close {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  fill: black;
+}
+
+.close:hover {
+  fill: #007881;
+  cursor: pointer;
+}

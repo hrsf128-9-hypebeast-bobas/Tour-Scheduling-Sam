@@ -3,16 +3,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
-import MainViewer from './components/MainViewer.jsx';
-import Modal from './components/Modal.jsx';
-import TourSchedule from './components/TourSchedule.jsx';
+import MainViewer from './components/MainViewer/MainViewer.jsx';
+import Modal from './components/Modal/Modal.jsx';
+import TourSchedule from './components/TourSchedule/TourSchedule.jsx';
+import styles from './main.css';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       modal: false,
-      home: {},
+      home: {
+        GalleryCount: 0,
+      },
     };
 
     this.toggleModal = this.toggleModal.bind(this);
@@ -34,12 +37,14 @@ class App extends React.Component {
     if (modalView.modal) {
       return (
         <div>
-          <div id="modalContainer">
+          <div className={styles.modalContainer}>
             <Modal toggleModal={this.toggleModal} home={this.state.home} />
           </div>
-          <div id="centerCol">
+          <div className={styles.centerCol}>
             <MainViewer home={this.state.home} />
-            <TourSchedule />
+            <div className={styles.tourbox}>
+              <TourSchedule home={this.state.home} />
+            </div>
           </div>
         </div>
       );
@@ -47,7 +52,9 @@ class App extends React.Component {
     return (
       <div id="centerCol">
         <MainViewer toggleModal={this.toggleModal} home={this.state.home} />
-        <TourSchedule />
+        <div id="tourbox">
+          <TourSchedule home={this.state.home} />
+        </div>
       </div>
     );
   }

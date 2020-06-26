@@ -1,0 +1,28 @@
+.calendarDiv {
+  /* overflow: hidden; */
+  margin: 4px;
+}
+
+.calendarElement {
+  display: inline-block;
+  margin: 8px 4px;
+  width: calc(25% - 8px);
+}
+
+.calendarButton {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: rgb(0, 173, 187) 0px 0px 0px 2px;
+  border-radius: 8px;
+  transition: top 0.1s ease 0s, box-shadow 0.1s ease 0s, border-color 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s;
+  padding: 8px;
+  border: 2px solid transparent;
+}
+
+.calendarDate {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+}
