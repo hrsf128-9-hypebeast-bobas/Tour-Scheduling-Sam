@@ -1,15 +1,13 @@
-/* html, body {
+html, body {
   padding: 0px;
   margin: 0px;
   height: 100vh;
-} */
+}
 
 .centerCol {
   max-width: 960px;
   margin: auto;
 }
-
-/* TOUR SCHEDULE */
 
 .tourbox {
   width: 33.4%;

@@ -73,7 +73,6 @@ class TourSchedule extends React.Component {
         </div>
       </div>
     );
-
   }
 }
 

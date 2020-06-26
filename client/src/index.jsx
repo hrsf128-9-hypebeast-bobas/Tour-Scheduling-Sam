@@ -50,9 +50,9 @@ class App extends React.Component {
       );
     }
     return (
-      <div id="centerCol">
+      <div className={styles.centerCol}>
         <MainViewer toggleModal={this.toggleModal} home={this.state.home} />
-        <div id="tourbox">
+        <div className={styles.tourbox}>
           <TourSchedule home={this.state.home} />
         </div>
       </div>
