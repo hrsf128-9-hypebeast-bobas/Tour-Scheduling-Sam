@@ -41,7 +41,7 @@ class Calendar extends React.Component {
     }
     target.classList = [styles.calendarButton, styles.ButtonOn].join(' ');
     this.setState({ selected: target.id });
-    console.log
+    this.props.dateSelect(target.id);
   }
 
   scrollRight() {

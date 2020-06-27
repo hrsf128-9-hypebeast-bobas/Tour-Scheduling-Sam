@@ -39,8 +39,6 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-right: 0px;
-  color: white;
-  background-color: rgb(0, 120, 130);
 }
 
 .virtual {
@@ -48,8 +46,6 @@
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-left: 0px;
-  color: black;
-  background-color: white;
 }
 
 .typeRadio {
@@ -60,6 +56,27 @@
   outline: none;
   font-size: 16px;
   padding: 8px 16px;
+  font-weight: bold;
+  cursor:pointer
+}
+
+.TourTypeOn {
+  color: white;
+  background-color: rgb(0, 120, 130);
+}
+
+.TourTypeOff {
+  color: black;
+  background-color: white;
+}
+
+.TourTypeOff:hover {
+  background-color: rgb(232, 233, 234);
+}
+
+.TourTypeOff:active {
+  color: rgb(255, 255, 255);
+  background-color: rgb(134, 144, 153);
 }
 
 .text {
