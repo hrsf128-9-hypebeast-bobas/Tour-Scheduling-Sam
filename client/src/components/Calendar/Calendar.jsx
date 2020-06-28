@@ -86,7 +86,7 @@ class Calendar extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
