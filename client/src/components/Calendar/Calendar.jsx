@@ -30,7 +30,7 @@ class Calendar extends React.Component {
   }
 
   componentDidMount() {
-    let init = document.getElementsByTagName('button')[7];
+    let init = document.getElementsByClassName(styles.calendarButton)[0];
     init.classList = [styles.calendarButton, styles.ButtonOn].join(' ');
   }
 
@@ -58,7 +58,7 @@ class Calendar extends React.Component {
         <div className={styles.Calendar}>
           <div className={styles.calendarDiv}>
             <div className={styles.calendarBox}>
-              {days.map((item) => <CalendarElement date={item} selectDate={this.selectDate} />)}
+              {days.map((item, i) => <CalendarElement date={item} key={i} selectDate={this.selectDate} />)}
             </div>
           </div>
           <button type="button" className={styles.pageButtonRight} onClick={this.scrollRight}>
@@ -82,7 +82,7 @@ class Calendar extends React.Component {
         </button>
         <div className={styles.calendarDiv}>
           <div className={styles.calendarScrolled}>
-            {days.map((item) => <CalendarElement date={item} selectDate={this.selectDate} />)}
+            {days.map((item, i) => <CalendarElement date={item} key={i} selectDate={this.selectDate} />)}
           </div>
         </div>
       </div>

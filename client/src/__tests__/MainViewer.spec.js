@@ -1,8 +1,9 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
-import data from '../../../database/testData.js'
+import data from '../../../database/testData';
+import styles from '../components/MainViewer/MainViewer.css';
 
-import MainViewer from '../components/MainViewer.jsx';
+import MainViewer from '../components/MainViewer/MainViewer.jsx';
 
 describe('MainViewer', () => {
   const wrapper = shallow(<MainViewer home={data[0]} />);
@@ -16,7 +17,7 @@ describe('MainViewer', () => {
   });
 
   it('Should dynamically render image count', () => {
-    let text = wrapper.find('#imgCount').text();
+    let text = wrapper.find('.imgCount').text();
     expect(text).toEqual('48');
   });
 });
