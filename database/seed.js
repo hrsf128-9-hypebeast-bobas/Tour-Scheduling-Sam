@@ -3,7 +3,6 @@ const faker = require('faker');
 const db = require('./TourSchedule.js');
 
 const data = [];
-
 for (let x = 0; x < 10; x += 1) {
   const set = {
     Address: faker.address.streetAddress(),
@@ -23,7 +22,6 @@ for (let x = 0; x < 10; x += 1) {
 db.Tour.create(data)
   .then((results) => {
     console.log(true);
-    db.close();
   })
   .catch((err) => {
     console.log(false, err);
