@@ -1,6 +1,7 @@
 // const mongoose = require('mongoose');
 const faker = require('faker');
 const db = require('./TourSchedule.js');
+const mongoose = require('mongoose');
 
 const data = [];
 for (let x = 0; x < 10; x += 1) {
@@ -22,6 +23,7 @@ for (let x = 0; x < 10; x += 1) {
 db.Tour.create(data)
   .then((results) => {
     console.log(true);
+    mongoose.disconnect();
   })
   .catch((err) => {
     console.log(false, err);
