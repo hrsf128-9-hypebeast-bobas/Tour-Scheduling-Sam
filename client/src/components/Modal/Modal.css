@@ -1,8 +1,8 @@
 /* MODAL */
 
 .modal {
-  height: calc(100% - 96px);
-  width: calc(100% - 96px);
+  height: calc(100vh - 96px);
+  width: calc(100vw - 96px);
   margin: 48px;
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
