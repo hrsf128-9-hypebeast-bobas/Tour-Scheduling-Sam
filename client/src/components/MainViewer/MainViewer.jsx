@@ -9,7 +9,7 @@ const MainViewer = ({ home, toggleModal }) => (
       <SaveButton />
     </div>
     <div className={styles.gradient} />
-    <img className={styles.mainImg} src="./images/main.jpg" alt="" onClick={toggleModal} />
+    <img className={styles.mainImg} src={home.MainImg} alt="" onClick={toggleModal} />
     <div>
       <button type="button" className={styles.galleryBtn} onClick={toggleModal}>
         <svg viewBox="0 0 32 32" className={styles.gallerySvg}>

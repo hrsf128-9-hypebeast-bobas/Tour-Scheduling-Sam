@@ -24,7 +24,7 @@ class App extends React.Component {
   componentDidMount() {
     axios.get('http://localhost:3001/api/listings')
       .then((results) => {
-        this.setState({ home: results.data[0] });
+        this.setState({ home: results.data[Math.floor(Math.random() * 100)] });
       });
   }
 
