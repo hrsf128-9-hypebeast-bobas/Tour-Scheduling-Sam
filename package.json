@@ -26,11 +26,12 @@
     "faker": "^4.1.0",
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2",
+    "moment": "^2.19.2",
     "mongoose": "^5.9.19",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "moment": "^2.19.2"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
