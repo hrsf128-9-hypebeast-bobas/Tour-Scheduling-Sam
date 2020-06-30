@@ -55,7 +55,9 @@ class App extends React.Component {
       <div className={styles.centerCol}>
         <MainViewer toggleModal={this.toggleModal} home={this.state.home} />
         <div className={styles.wideDiv}>
-          <div></div>
+          <div className={styles.description}>
+            <img className={styles.descImg} src="https://homeimages-samm1337.s3-us-west-1.amazonaws.com/description.png" alt=""></img>
+          </div>
           <div className={styles.tourbox}>
             <TourSchedule home={this.state.home} />
           </div>
