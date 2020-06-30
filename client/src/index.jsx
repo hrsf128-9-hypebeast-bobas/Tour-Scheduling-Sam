@@ -42,8 +42,10 @@ class App extends React.Component {
           </div>
           <div className={styles.centerCol}>
             <MainViewer home={this.state.home} />
-            <div className={styles.tourbox}>
-              <TourSchedule home={this.state.home} />
+            <div className={styles.wideDiv}>
+              <div className={styles.tourbox}>
+                <TourSchedule home={this.state.home} />
+              </div>
             </div>
           </div>
         </div>
@@ -52,8 +54,11 @@ class App extends React.Component {
     return (
       <div className={styles.centerCol}>
         <MainViewer toggleModal={this.toggleModal} home={this.state.home} />
-        <div className={styles.tourbox}>
-          <TourSchedule home={this.state.home} />
+        <div className={styles.wideDiv}>
+          <div></div>
+          <div className={styles.tourbox}>
+            <TourSchedule home={this.state.home} />
+          </div>
         </div>
       </div>
     );
