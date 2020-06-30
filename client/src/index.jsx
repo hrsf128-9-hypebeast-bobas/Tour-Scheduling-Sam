@@ -44,7 +44,7 @@ class App extends React.Component {
             <MainViewer home={this.state.home} />
             <div className={styles.wideDiv}>
               <div className={styles.tourbox}>
-                <TourSchedule home={this.state.home} />
+                {/* <TourSchedule home={this.state.home} /> */}
               </div>
             </div>
           </div>

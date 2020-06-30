@@ -8,6 +8,11 @@ const port = 3001;
 
 const app = express();
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 app.use(express.static(path.join(__dirname, '/../client/dist')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan('dev'));
