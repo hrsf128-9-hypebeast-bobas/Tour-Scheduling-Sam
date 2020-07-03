@@ -24,10 +24,8 @@ for (let x = 0; x < 100; x++) {
   set.GalleryCount = gallery.length;
   data.push(set);
 }
-db.Tour.remove()
+
+db.Tour.create(data)
   .then(() => {
-    db.Tour.create(data)
-      .then(() => {
-        mongoose.disconnect();
-      });
+    mongoose.disconnect();
   });
