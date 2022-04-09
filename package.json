@@ -27,7 +27,7 @@
     "faker": "^4.1.0",
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2",
-    "moment": "^2.19.2",
+    "moment": "^2.29.2",
     "mongoose": "^5.9.19",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
